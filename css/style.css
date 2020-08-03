@@ -60,7 +60,8 @@ body{
   top: 0vh;
   width: 15vw;
   height: inherit;
-  background-color: #ffffff;
+  background-color: #fafafa;
+  animation: 1700ms infinite alternate ease-out breathing-border-white-black;
   transition: all 500ms linear;
 }
 .sidebarItems{
@@ -80,4 +81,16 @@ body{
 }
 .sidebarItem:hover{
   cursor: pointer;
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+  font-size: 2.5vw;
+}
+
+@keyframes breathing-border-white-black{
+  from{
+    border-left: 3px solid #444444;
+  }
+  to{
+    border-left: 3px solid #fafafa;
+  }
 }
