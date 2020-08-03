@@ -1,0 +1,28 @@
+@font-face {
+  font-family: HalloSans;
+  src: url("../font/HalloSans/HalloSans.woff");
+}
+@font-face {
+  font-family: HalloSansLight;
+  src: url("../font/HalloSans/HalloSansLight.woff");
+}
+@font-face {
+  font-family: HalloSansBlack;
+  src: url("../font/HalloSans/HalloSansBlack.woff");
+}
+@font-face {
+  font-family: CaviarDreams;
+  src: url("../font/CaviarDreams/CaviarDreams.woff");
+}
+@font-face {
+  font-family: CaviarDreamsBold;
+  src: url("../font/CaviarDreams/CaviarDreamsBold.woff");
+}
+@font-face {
+  font-family: CaviarDreamsItalic;
+  src: url("../font/CaviarDreams/CaviarDreamsItalic.woff");
+}
+@font-face {
+  font-family: CaviarDreamsBoldItalic;
+  src: url("../font/CaviarDreams/CaviarDreamsBoldItalic.woff");
+}
