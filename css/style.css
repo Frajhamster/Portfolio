@@ -1,29 +1,25 @@
+/* HTML Elements */
 html{
-  width: 100%;
-  height: 100%;
   overflow-x: hidden;
 }
 body{
-  width: inherit;
-  height: inherit;
   margin: 0px;
   padding: 0px;
   background: #fdfdfd;
 }
 
-
+/* Custom class */
+/* Header */
 .bigBox{
-  width: inherit;
-  height: inherit;
+
 }
 .topBar{
-  width: inherit;
-  height: 11vh;
+  min-height: 100px;
   border-bottom: 5px solid black;
 }
 .myName{
-  width: 20vw;
-  height: inherit;
+  width: 400px;
+  height: 100px;
   float: left;
   display: flex;
   justify-content: center;
@@ -31,11 +27,11 @@ body{
 }
 .name{
   font-family: Baroneys;
-  font-size: 3vw;
+  font-size: 60px;
 }
 .myProfession{
-  width: 20vw;
-  height: inherit;
+  width: 300px;
+  height: 100px;
   float: left;
   display: flex;
   justify-content: center;
@@ -43,11 +39,11 @@ body{
 }
 .profession{
   font-family: HalloSansLight;
-  font-size: 1.5vw;
+  font-size: 30px;
 }
 .imageBox{
-  width: 10vw;
-  height: inherit;
+  width: 100px;
+  height: 100px;
   float: right;
   display: flex;
   justify-content: center;
@@ -55,31 +51,53 @@ body{
   animation: 1700ms infinite alternate ease-out moving-pointing-hand;
 }
 .imagePointingHand{
-  width: 5vw;
-  height: 5vw;
+  width: 50px;
+  height: 50px;
 }
+
+/* Main Content */
 .contentBox{
-  width: inherit;
-  height: 75vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
 }
-.texttest{
-  font-family: Patahola;
+.content1, .content2, .content3, .content4, .content5{
+  display: none;
+}
+.content1_imageBox1{
+  float: left;
+  max-width: 50%;
+  max-height: 50%;
+}
+.content1_image1{
+  max-width: 100%;
+  max-height: 100%;
+}
+.content1_textBox1{
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+}
+.content1_text1{
+  font-family: BebasNeue;
+  font-size: 30px;
 }
 
 
+/* Sidebar Menu */
 .sidebar{
   position: fixed;
-  left: 98vw;
-  top: 0vh;
-  width: 15vw;
-  height: inherit;
+  right: -270px;
+  top: 0px;
+  width: 300px;
+  height: 100%;
   background-color: #fafafa;
   animation: 1700ms infinite alternate ease-out breathing-border-white-black;
   transition: all 500ms linear;
 }
 .sidebarItems{
   width: inherit;
-  height: 60%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,18 +105,19 @@ body{
 }
 .sidebarItem{
   font-family: CaviarDreams;
-  font-size: 2vw;
+  font-size: 35px;
   font-weight: 600;
-  margin-top: 0vh;
-  margin-bottom: 6vh;
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
 .sidebarItem:hover{
   cursor: pointer;
   -ms-transform: rotate(15deg);
   transform: rotate(15deg);
-  font-size: 2.5vw;
+  font-size: 45px;
 }
 
+/* Animations */
 @keyframes breathing-border-white-black{
   from{
     border-left: 3px solid #444444;
@@ -109,9 +128,37 @@ body{
 }
 @keyframes moving-pointing-hand{
   from{
-    margin-right: 0vw;
+    margin-right: 10px;
   }
   to{
-    margin-right: 2vw;
+    margin-right: 30px;
+  }
+}
+
+/* Phone CSS */
+@media (max-width: 850px) {
+  /* Header and Sidebar Menu */
+  .myName, .myProfession, .imageBox{
+    float: none;
+    width: 100%;
+  }
+  .imageBox{
+    float:none;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .sidebar{
+    right: -300px;
+  }
+
+  /* Main Content */
+  .content1_imageBox1, .content1_textBox1{
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
   }
 }

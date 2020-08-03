@@ -12,7 +12,7 @@
     <!-- Entire screen -->
     <div class="bigBox">
       <!-- Top bar -->
-      <div class="topBar">
+      <header class="topBar">
         <!-- Name box -->
         <div class="myName">
           <!-- Name text -->
@@ -21,28 +21,48 @@
         <!-- Profession box -->
         <div class="myProfession">
           <!-- Profession text -->
-          <p class="profession">photographer since 2016</p>
+          <p class="profession">fashion photographer</p>
         </div>
         <!-- Image box -->
-        <div class="imageBox">
-          <img class="imagePointingHand" src="image/pointinghand.png">
+        <div class="imageBox" onclick="toggleSidebarMenu()">
+          <img class="imagePointingHand" src="image/arrowRight.png">
         </div>
-      </div>
+      </header>
       <!-- Content box "Home" -->
       <div class="contentBox">
         <!-- WIP ADD CONTENT -->
-        <h1 class="texttest">TBD - content</h1>
+        <div class="content1">
+          <div class="content1_imageBox1">
+            <img class="content1_image1" src="image/pictureHome.jpg">
+          </div>
+          <div class="content1_textBox1">
+            <p class="content1_text1">My name is Jan Rozman and I like to take pictures of people because it is fun and cool.</p>
+          </div>
+        </div>
+        <div class="content2">
+          <h1 class="texttest">About</h1>
+        </div>
+        <div class="content3">
+          <h1 class="texttest">Portfolio</h1>
+        </div>
+        <div class="content4">
+          <h1 class="texttest">Contact</h1>
+        </div>
+        <div class="content5">
+          <h1 class="texttest">Socials</h1>
+        </div>
       </div>
     </div>
     <!-- Sidebar menu -->
-    <div class="sidebar" onmouseover="showSideBarMenu(this)" onmouseout="hideSideBarMenu(this)">
+    <div class="sidebar" onmouseover="showSideBar(this)" onmouseout="hideSideBar(this)">
       <!-- Sidebar items box -->
       <div class="sidebarItems">
         <!-- Sidebar items -->
-        <p class="sidebarItem">Home</p>
-        <p class="sidebarItem">About</p>
-        <p class="sidebarItem">Portfolio</p>
-        <p class="sidebarItem">Contact</p>
+        <p class="sidebarItem" onclick="showPage(this, 1)">Home</p>
+        <p class="sidebarItem" onclick="showPage(this, 2)">About</p>
+        <p class="sidebarItem" onclick="showPage(this, 3)">Portfolio</p>
+        <p class="sidebarItem" onclick="showPage(this, 4)">Contact</p>
+        <p class="sidebarItem" onclick="showPage(this, 5)">Socials</p>
       </div>
     </div>
   </body>
