@@ -1,3 +1,4 @@
+/* Hallo Sans */
 @font-face {
   font-family: HalloSans;
   src: url("../font/HalloSans/HalloSans.woff");
@@ -10,6 +11,7 @@
   font-family: HalloSansBlack;
   src: url("../font/HalloSans/HalloSansBlack.woff");
 }
+/* Caviar Dreams */
 @font-face {
   font-family: CaviarDreams;
   src: url("../font/CaviarDreams/CaviarDreams.woff");
@@ -25,4 +27,52 @@
 @font-face {
   font-family: CaviarDreamsBoldItalic;
   src: url("../font/CaviarDreams/CaviarDreamsBoldItalic.woff");
+}
+/* Bebas Neue */
+@font-face {
+  font-family: BebasNeue;
+  src: url("../font/BebasNeue/BebasNeue.woff");
+}
+/* Oswald */
+@font-face {
+  font-family: Oswald;
+  src: url("../font/Oswald/Oswald.woff");
+}
+/* Lane */
+@font-face {
+  font-family: Lane;
+  src: url("../font/Lane/Lane.woff");
+}
+@font-face {
+  font-family: Lane3D;
+  src: url("../font/Lane/Lane3D.woff");
+}
+/* Ostrich Sans */
+@font-face {
+  font-family: OstrichSans;
+  src: url("../font/OstrichSans/OstrichSans.woff");
+}
+@font-face {
+  font-family: OstrichSansBold;
+  src: url("../font/OstrichSans/OstrichSansBold.woff");
+}
+/* Questa Grande */
+@font-face {
+  font-family: QuestaGrande;
+  src: url("../font/QuestaGrande/QuestaGrande.woff");
+}
+/* Yeseva One */
+@font-face {
+  font-family: YesevaOne;
+  src: url("../font/YesevaOne/YesevaOne.woff");
+}
+/* Patahola */
+@font-face {
+  font-family: Patahola;
+  src: url("../font/Patahola/Patahola.woff");
+}
+/* Baroneys */
+@font-face {
+  font-family: Baroneys;
+  src: url("../font/Baroneys/Baroneys.woff");
 }

@@ -30,8 +30,8 @@ body{
   align-items: center;
 }
 .name{
-  font-family: HalloSans;
-  font-size: 2.5vw;
+  font-family: Baroneys;
+  font-size: 3vw;
 }
 .myProfession{
   width: 20vw;
@@ -48,6 +48,9 @@ body{
 .contentBox{
   width: inherit;
   height: 75vh;
+}
+.texttest{
+  font-family: Patahola;
 }
 
 
@@ -71,6 +74,10 @@ body{
 .sidebarItem{
   font-family: CaviarDreams;
   font-size: 2vw;
+  font-weight: 600;
   margin-top: 0vh;
   margin-bottom: 6vh;
+}
+.sidebarItem:hover{
+  cursor: pointer;
 }
