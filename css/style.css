@@ -45,6 +45,19 @@ body{
   font-family: HalloSansLight;
   font-size: 1.5vw;
 }
+.imageBox{
+  width: 10vw;
+  height: inherit;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 1700ms infinite alternate ease-out moving-pointing-hand;
+}
+.imagePointingHand{
+  width: 5vw;
+  height: 5vw;
+}
 .contentBox{
   width: inherit;
   height: 75vh;
@@ -92,5 +105,13 @@ body{
   }
   to{
     border-left: 3px solid #fafafa;
+  }
+}
+@keyframes moving-pointing-hand{
+  from{
+    margin-right: 0vw;
+  }
+  to{
+    margin-right: 2vw;
   }
 }
