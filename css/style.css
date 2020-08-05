@@ -8,58 +8,89 @@ body{
   background: #fdfdfd;
 }
 
-/* Custom class */
 /* Header */
 .bigBox{
 
 }
-.topBar{
-  min-height: 100px;
-  border-bottom: 5px solid black;
+header{
+  min-height: 80px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  display:flex;
+  justify-content: center;
+}
+.headerLeft{
+  width: 40%;
+}
+.headerLeft:before { content: '';
+  position: absolute;
+  border-bottom: 3px solid #000000aa;
+  border-radius: 3px;
+  height: 109px;
+  width: 40%;
+}
+.headerMid{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.headerMidImg{
+  max-height: 200px;
+}
+.headerRight{
+  width: 40%;
+}
+.headerRight:before { content: '';
+  position: absolute;
+  border-bottom: 3px solid #000000aa;
+  border-radius: 3px;
+  height: 109px;
+  width: 40%;
 }
 .myName{
   width: 400px;
-  height: 100px;
+  height: 80px;
   float: left;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .name{
-  font-family: Baroneys;
-  font-size: 60px;
+  font-family: HalloSansLight;
+  font-size: 50px;
 }
 .myProfession{
-  width: 300px;
-  height: 100px;
-  float: left;
+  width: 100%;
+  margin: 0px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .profession{
+  margin-top: 10px;
   font-family: HalloSansLight;
-  font-size: 30px;
+  font-size: 25px;
 }
 .imageBox{
-  width: 100px;
-  height: 100px;
-  float: right;
+  position: fixed;
+  width: 30px;
+  height: 100%;
+  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: 1700ms infinite alternate ease-out moving-pointing-hand;
 }
 .imagePointingHand{
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
 }
 
 /* Main Content */
 .contentBox{
   width: 80%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .content1, .content2, .content3, .content4, .content5{
   display: none;
@@ -71,18 +102,18 @@ body{
 }
 .content1_image1{
   max-width: 100%;
-  max-height: 100%;
+  max-height: 750px;
 }
 .content1_textBox1{
   float: left;
   width: 40%;
+  margin-top: 0px;
   margin-left: 5%;
 }
 .content1_text1{
   font-family: BebasNeue;
   font-size: 30px;
 }
-
 
 /* Sidebar Menu */
 .sidebar{
@@ -91,8 +122,7 @@ body{
   top: 0px;
   width: 300px;
   height: 100%;
-  background-color: #fafafa;
-  animation: 1700ms infinite alternate ease-out breathing-border-white-black;
+  background-color: #bbbbbb55;
   transition: all 500ms linear;
 }
 .sidebarItems{
@@ -117,15 +147,27 @@ body{
   font-size: 45px;
 }
 
-/* Animations */
-@keyframes breathing-border-white-black{
-  from{
-    border-left: 3px solid #444444;
-  }
-  to{
-    border-left: 3px solid #fafafa;
-  }
+/* Social Media */
+.socialMediaFixed{
+  position: fixed;
+  right: 60px;
+  bottom: 20px;
+  width: 210px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
 }
+.logo{
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.logo:hover{
+  cursor: pointer;
+}
+
+/* Animations */
 @keyframes moving-pointing-hand{
   from{
     margin-right: 10px;
@@ -138,9 +180,12 @@ body{
 /* Phone CSS */
 @media (max-width: 850px) {
   /* Header and Sidebar Menu */
-  .myName, .myProfession, .imageBox{
-    float: none;
-    width: 100%;
+  .headerLeft, .headerLeft:before, .headerRight, .headerRight:before{
+    width: 25%;
+  }
+  .headerMid{
+    margin-left: 3%;
+    margin-right: 3%;
   }
   .imageBox{
     float:none;
@@ -152,6 +197,7 @@ body{
   }
   .sidebar{
     right: -300px;
+    background-color: #eeeeeecc;
   }
 
   /* Main Content */
@@ -161,4 +207,6 @@ body{
     max-width: 100%;
     margin-left: 0px;
   }
+
+
 }

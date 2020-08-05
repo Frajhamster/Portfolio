@@ -12,22 +12,28 @@
     <!-- Entire screen -->
     <div class="bigBox">
       <!-- Top bar -->
-      <header class="topBar">
-        <!-- Name box -->
-        <div class="myName">
-          <!-- Name text -->
-          <h1 class="name">Jan Rozman</h1>
+      <header>
+        <!-- Left Side -->
+        <div class="headerLeft">
+
         </div>
-        <!-- Profession box -->
-        <div class="myProfession">
-          <!-- Profession text -->
-          <p class="profession">fashion photographer</p>
+        <!-- Middle LOGO -->
+        <div class="headerMid">
+          <img class="headerMidImg" src="image/claritystLogo.png">
         </div>
-        <!-- Image box -->
+        <!-- Right Side -->
+        <div class="headerRight">
+
+        </div>
+        <!-- Pointing Arrow -->
         <div class="imageBox" onclick="toggleSidebarMenu()">
-          <img class="imagePointingHand" src="image/arrowRight.png">
+          <img class="imagePointingHand" src="image/wing.png">
         </div>
       </header>
+      <!-- Profession -->
+      <div class="myProfession">
+
+      </div>
       <!-- Content box "Home" -->
       <div class="contentBox">
         <!-- WIP ADD CONTENT -->
@@ -64,6 +70,12 @@
         <p class="sidebarItem" onclick="showPage(this, 4)">Contact</p>
         <p class="sidebarItem" onclick="showPage(this, 5)">Socials</p>
       </div>
+    </div>
+    <!-- Social Media -->
+    <div class="socialMediaFixed">
+      <img class="logo" src="image/iglogo.png" onclick="openSite('https://www.instagram.com/clarityst/')">
+      <img class="logo" src="image/fblogo.png" onclick="openSite('https://www.facebook.com/Clarityst-111557937087687/')">
+      <img class="logo" src="image/gmaillogo.png">
     </div>
   </body>
 </html>

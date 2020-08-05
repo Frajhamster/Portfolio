@@ -44,7 +44,9 @@ function showPage(element, index){
   nodes[index - 1].style.display = "block";
 }
 
-
+function openSite(url){
+  window.location.href = url;
+}
 
 //For css to look more compact and nice... this function makes landing page visible
 setTimeout(function () {
