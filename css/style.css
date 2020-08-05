@@ -1,4 +1,4 @@
-/* HTML Elements */
+/* Classic Elements */
 html{
   overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ body{
 header{
   min-height: 80px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 0px;
   display:flex;
   justify-content: center;
@@ -102,7 +102,7 @@ header{
 }
 .content1_image1{
   max-width: 100%;
-  max-height: 750px;
+  max-height: 600px;
 }
 .content1_textBox1{
   float: left;
@@ -207,6 +207,9 @@ header{
     max-width: 100%;
     margin-left: 0px;
   }
-
+  .content1_imageBox1{
+    display: flex;
+    justify-content: center;
+  }
 
 }
