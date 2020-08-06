@@ -70,20 +70,14 @@ header{
   font-family: HalloSansLight;
   font-size: 25px;
 }
-.imageBox{
-  position: fixed;
-  width: 30px;
-  height: 100%;
-  right: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: 1700ms infinite alternate ease-out moving-pointing-hand;
+    /* Phone Menu Icon */
+.imageBoxMenu{
+  display: none;
 }
-.imagePointingHand{
-  width: 30px;
-  height: 30px;
-  opacity: 0.5;
+.imageMenu{
+  width: 50px;
+  height: 50px;
+  opacity: 1;
 }
 
 /* Main Content */
@@ -127,7 +121,7 @@ header{
 }
 .sidebarItems{
   width: inherit;
-  height: 75%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,6 +140,31 @@ header{
   transform: rotate(15deg);
   font-size: 45px;
 }
+.sidebarBookMark{
+  position: absolute;
+  top: 50%;
+  margin-left: -30px;
+  transition: all 500ms linear;
+}
+.sidebarBookMarkImg{
+  width: 50px;
+  height: 35px;
+  opacity: 0.9;
+}
+.sidebarColorfulBorder{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(#bbbbbb33, #333333dd);
+  animation: 3s infinite alternate linear colorfulBullshit;
+  border-radius: 15px;
+}
+.sidebar:hover .sidebarColorfulBorder{
+  display: none;
+}
+
 
 /* Social Media */
 .socialMediaFixed{
@@ -168,13 +187,23 @@ header{
 }
 
 /* Animations */
-@keyframes moving-pointing-hand{
+@keyframes colorfulBullshit{
   from{
-    margin-right: 10px;
+    top: 0%;
   }
   to{
-    margin-right: 30px;
+    top: 100%;
+    transform: rotate(480deg);
   }
+}
+@keyframes evenMoreColorfulBullshit {
+  0% {background-color: #9400d3;}
+  17% {background-color: #4b0082;}
+  34% {background-color: #0000ff;}
+  51% {background-color: #00ff00;}
+  68% {background-color: #ffff00;}
+  85% {background-color: #ff7f00;}
+  100% {background-color: #ff0000;}
 }
 
 /* Phone CSS */
@@ -187,8 +216,11 @@ header{
     margin-left: 3%;
     margin-right: 3%;
   }
-  .imageBox{
-    float:none;
+  .sidebarBookMark{
+    display: none;
+  }
+  .imageBoxMenu{
+    display: flex;
     position: fixed;
     left: 10px;
     top: 10px;
@@ -198,6 +230,9 @@ header{
   .sidebar{
     right: -300px;
     background-color: #eeeeeecc;
+  }
+  .sidebarColorfulBorder{
+    display: none;
   }
 
   /* Main Content */
