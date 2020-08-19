@@ -25,7 +25,7 @@ header{
 }
 .headerLeft:before { content: '';
   position: absolute;
-  border-bottom: 3px solid #000000aa;
+  border-bottom: 3px solid #231f20;
   border-radius: 3px;
   height: 109px;
   width: 40%;
@@ -42,35 +42,11 @@ header{
 }
 .headerRight:before { content: '';
   position: absolute;
-  border-bottom: 3px solid #000000aa;
+  border-bottom: 3px solid #231f20;
   border-radius: 3px;
   height: 109px;
   width: 40%;
 }
-.myName{
-  width: 400px;
-  height: 80px;
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.name{
-  font-family: HalloSansLight;
-  font-size: 50px;
-}
-.myProfession{
-  width: 100%;
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-}
-.profession{
-  margin-top: 10px;
-  font-family: HalloSansLight;
-  font-size: 25px;
-}
-    /* Phone Menu Icon */
 .imageBoxMenu{
   display: none;
 }
@@ -116,7 +92,7 @@ header{
   top: 0px;
   width: 300px;
   height: 100%;
-  background-color: #bbbbbb55;
+  background-color: #eeeeeecc;
   transition: all 500ms linear;
 }
 .sidebarItems{
@@ -151,20 +127,26 @@ header{
   height: 35px;
   opacity: 0.9;
 }
-.sidebarColorfulBorder{
+.sidebarAnimatedBorder{
+  /*
   position: absolute;
   top: 0px;
   left: 0px;
   width: 30px;
   height: 30px;
-  background-image: linear-gradient(#bbbbbb33, #333333dd);
+  background-image: linear-gradient(#bbbbbb33, #111111dd);
   animation: 3s infinite alternate linear colorfulBullshit;
   border-radius: 15px;
+  */
 }
-.sidebar:hover .sidebarColorfulBorder{
+.sidebarSocialMedia{
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0px;
   display: none;
+  justify-content: center;
 }
-
 
 /* Social Media */
 .socialMediaFixed{
@@ -192,32 +174,20 @@ header{
     top: 0%;
   }
   to{
-    top: 100%;
+    top: calc(100% - 30px);
     transform: rotate(480deg);
   }
 }
-@keyframes evenMoreColorfulBullshit {
-  0% {background-color: #9400d3;}
-  17% {background-color: #4b0082;}
-  34% {background-color: #0000ff;}
-  51% {background-color: #00ff00;}
-  68% {background-color: #ffff00;}
-  85% {background-color: #ff7f00;}
-  100% {background-color: #ff0000;}
-}
 
-/* Phone CSS */
+/* Phone CSS   < 850px */
 @media (max-width: 850px) {
-  /* Header and Sidebar Menu */
+  /* Header */
   .headerLeft, .headerLeft:before, .headerRight, .headerRight:before{
-    width: 25%;
+    max-width: 25%;
   }
   .headerMid{
     margin-left: 3%;
     margin-right: 3%;
-  }
-  .sidebarBookMark{
-    display: none;
   }
   .imageBoxMenu{
     display: flex;
@@ -226,13 +196,6 @@ header{
     top: 10px;
     width: 50px;
     height: 50px;
-  }
-  .sidebar{
-    right: -300px;
-    background-color: #eeeeeecc;
-  }
-  .sidebarColorfulBorder{
-    display: none;
   }
 
   /* Main Content */
@@ -247,4 +210,52 @@ header{
     justify-content: center;
   }
 
+  /* Sidebar Menu */
+  .sidebar{
+    right: -300px;
+    background-color: #eeeeeeee;
+  }
+  .sidebarBookMark{
+    display: none;
+  }
+  .sidebarAnimatedBorder{
+    display: none;
+  }
+  .sidebarSocialMedia{
+    display: flex;
+  }
+
+  /* Social Media */
+  .socialMediaFixed{
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  /* Header */
+  .headerLeft, .headerLeft:before, .headerRight, .headerRight:before{
+    max-width: 20%;
+  }
+  .imageMenu{
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Sidebar Menu */
+  .sidebar{
+    width: 200px;
+    right: -200px;
+    background-color: #eeeeeeee;
+  }
+  .sidebarItem{
+    font-size: 25px;
+  }
+  .sidebarItem:hover{
+    font-size: 35px;
+  }
+
+  /* Social Media */
+  .logo{
+    width: 50px;
+    height: 50px;
+  }
 }
