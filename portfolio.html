@@ -14,17 +14,13 @@
       <!-- Top bar -->
       <header>
         <!-- Left Side -->
-        <div class="headerLeft">
-
-        </div>
+        <div class="headerLeft"></div>
         <!-- Middle LOGO -->
         <div class="headerMid">
           <img class="headerMidImg" src="image/claritystLogo.png">
         </div>
         <!-- Right Side -->
-        <div class="headerRight">
-
-        </div>
+        <div class="headerRight"></div>
         <!-- SideBar Menu Phone -->
         <div class="imageBoxMenu" onclick="toggleSidebarMenu()">
           <img class="imageMenu" src="image/menuLogo.png">
@@ -32,7 +28,7 @@
       </header>
       <!-- Content Box -->
       <div class="contentBox">
-        <!-- First site -->
+        <!-- Site 1 -->
         <div class="content1">
           <div class="content1_imageBox1">
             <img class="content1_image1" src="image/pictureHome.jpg">
@@ -41,14 +37,58 @@
             <p class="content1_text1">My name is Jan Rozman and I like to take pictures of people because it is fun and cool.</p>
           </div>
         </div>
-        <!-- Second site -->
+        <!-- Site 2 -->
         <div class="content2">
+          <!-- Site title -->
           <h1 class="texttest">About</h1>
         </div>
+        <!-- Site 3 -->
         <div class="content3">
+          <!-- Site title -->
           <h1 class="texttest">Portfolio</h1>
         </div>
+        <!-- Site 4 -->
         <div class="content4">
+          <!-- Site title -->
+          <h1 class="content4_text1">Gallery</h1>
+          <!-- Gallery table -->
+          <table class="content4_gallerytable">
+            <tr class="content4_gallerytable_tr_td">
+              <td class="content4_gallerytable_tr_td">
+                <img class="content4_gallerytable_image" src="image/gallery/slika1.jpg">
+              </td>
+              <td class="content4_gallerytable_tr_td">
+                <img class="content4_gallerytable_image" src="image/gallery/slika2.jpg">
+              </td>
+            </tr>
+            <tr class="content4_gallerytable_tr_td">
+              <td class="content4_gallerytable_tr_td">
+                <img class="content4_gallerytable_image" src="image/gallery/slika3.jpg">
+              </td>
+              <td class="content4_gallerytable_tr_td">
+                <img class="content4_gallerytable_image" src="image/gallery/slika4.jpg">
+              </td>
+            </tr>
+            <tr class="content4_gallerytable_tr_td">
+              <td class="content4_gallerytable_tr_td">
+                <img class="content4_gallerytable_image" src="image/gallery/slika5.jpg">
+              </td>
+              <td class="content4_gallerytable_tr_td">
+                <img class="content4_gallerytable_image" src="image/gallery/slika6.jpg">
+              </td>
+            </tr>
+            <tr class="content4_gallerytable_tr_td">
+              <td class="content4_gallerytable_tr_td">
+                <img class="content4_gallerytable_image" src="image/gallery/slika7.jpg">
+              </td>
+              <td class="content4_gallerytable_tr_td">
+                <img class="content4_gallerytable_image" src="image/gallery/slika8.jpg">
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- Site 5 -->
+        <div class="content5">
           <h1 class="texttest">Contact</h1>
         </div>
       </div>
@@ -56,22 +96,17 @@
     <!-- Sidebar menu -->
     <div class="sidebar" onmouseover="showSideBar(this)" onmouseout="hideSideBar(this)">
       <!-- Sidebar items box -->
-      <div class="sidebarItems">
+      <nav class="sidebarItems">
         <!-- Sidebar items -->
         <p class="sidebarItem" onclick="showPage(this, 1)">Home</p>
         <p class="sidebarItem" onclick="showPage(this, 2)">About</p>
         <p class="sidebarItem" onclick="showPage(this, 3)">Portfolio</p>
-        <p class="sidebarItem" onclick="showPage(this, 4)">Contact</p>
-      </div>
+        <p class="sidebarItem" onclick="showPage(this, 4)">Gallery</p>
+        <p class="sidebarItem" onclick="showPage(this, 5)">Contact</p>
+      </nav>
       <!-- SideBar BookMark -->
       <div class="sidebarBookMark" onclick="toggleSidebarMenu()">
         <img class="sidebarBookMarkImg" src="image/bookmark.png">
-      </div>
-      <!-- Social Media -->
-      <div class="sidebarSocialMedia">
-        <img class="logo" src="image/iglogo.png" onclick="openSite('https://www.instagram.com/clarityst/')">
-        <img class="logo" src="image/fblogo.png" onclick="openSite('https://www.facebook.com/Clarityst-111557937087687/')">
-        <img class="logo" src="image/gmaillogo.png">
       </div>
       <!-- Animated border -->
       <div class="sidebarAnimatedBorder"></div>
@@ -80,7 +115,7 @@
     <div class="socialMediaFixed">
       <img class="logo" src="image/iglogo.png" onclick="openSite('https://www.instagram.com/clarityst/')">
       <img class="logo" src="image/fblogo.png" onclick="openSite('https://www.facebook.com/Clarityst-111557937087687/')">
-      <img class="logo" src="image/gmaillogo.png">
+      <img class="logo" src="image/gmaillogo.png" onclick="openSite('mailto:jan.teleban00@gmail.com')">
     </div>
   </body>
 </html>

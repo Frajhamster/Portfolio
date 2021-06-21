@@ -2,6 +2,10 @@
 html{
   overflow-x: hidden;
 }
+/* Hide ugly scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+}
 body{
   margin: 0px;
   padding: 0px;
@@ -17,7 +21,7 @@ header{
   width: 100%;
   margin-top: 15px;
   margin-bottom: 0px;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 .headerLeft{
@@ -83,6 +87,23 @@ header{
 .content1_text1{
   font-family: BebasNeue;
   font-size: 30px;
+}
+.content4_text1{
+  display: flex;
+  justify-content: center;
+}
+.content4_gallerytable{
+  width: 100%;
+}
+.content4_gallerytable_tr_td{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.content4_gallerytable_image{
+  max-width: 90%;
+  max-height: 500px;
 }
 
 /* Sidebar Menu */
@@ -220,9 +241,6 @@ header{
   }
   .sidebarAnimatedBorder{
     display: none;
-  }
-  .sidebarSocialMedia{
-    display: flex;
   }
 
   /* Social Media */
