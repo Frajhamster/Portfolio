@@ -30,65 +30,39 @@
       <div class="contentBox">
         <!-- Site 1 -->
         <div class="content1">
-          <div class="content1_imageBox1">
-            <img class="content1_image1" src="image/pictureHome.jpg">
-          </div>
+          <!-- Site title -->
           <div class="content1_textBox1">
-            <p class="content1_text1">My name is Jan Rozman and I like to take pictures of people because it is fun and cool.</p>
+            <h1 class="content1_text1">Portraits</h1>
+          </div>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <div class="slideshow-center-img">
+              <div class="mySlides1 fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="slideshow-img-size" src="F:\Lightroom slike\10_10_2020 (39)-Edit-Edit-3.jpg">
+              </div>
+              <div class="mySlides1 fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="slideshow-img-size" src="F:\Lightroom slike\29_6_2020 (166)-Edit-Edit-Edit-4.jpg">
+              </div>
+              <div class="mySlides1 fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="slideshow-img-size" src="F:\Lightroom slike\28_3_2021 (1569)-Edit-Edit-Edit-Edit-3.jpg">
+              </div>
+            </div>
+            <!-- Next and previous button -->
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
         </div>
         <!-- Site 2 -->
         <div class="content2">
           <!-- Site title -->
-          <h1 class="texttest">About</h1>
+          <h1 class="texttest">Videography</h1>
         </div>
         <!-- Site 3 -->
         <div class="content3">
           <!-- Site title -->
-          <h1 class="texttest">Portfolio</h1>
-        </div>
-        <!-- Site 4 -->
-        <div class="content4">
-          <!-- Site title -->
-          <h1 class="content4_text1">Gallery</h1>
-          <!-- Gallery table -->
-          <table class="content4_gallerytable">
-            <tr class="content4_gallerytable_tr_td">
-              <td class="content4_gallerytable_tr_td">
-                <img class="content4_gallerytable_image" src="image/gallery/slika1.jpg">
-              </td>
-              <td class="content4_gallerytable_tr_td">
-                <img class="content4_gallerytable_image" src="image/gallery/slika2.jpg">
-              </td>
-            </tr>
-            <tr class="content4_gallerytable_tr_td">
-              <td class="content4_gallerytable_tr_td">
-                <img class="content4_gallerytable_image" src="image/gallery/slika3.jpg">
-              </td>
-              <td class="content4_gallerytable_tr_td">
-                <img class="content4_gallerytable_image" src="image/gallery/slika4.jpg">
-              </td>
-            </tr>
-            <tr class="content4_gallerytable_tr_td">
-              <td class="content4_gallerytable_tr_td">
-                <img class="content4_gallerytable_image" src="image/gallery/slika5.jpg">
-              </td>
-              <td class="content4_gallerytable_tr_td">
-                <img class="content4_gallerytable_image" src="image/gallery/slika6.jpg">
-              </td>
-            </tr>
-            <tr class="content4_gallerytable_tr_td">
-              <td class="content4_gallerytable_tr_td">
-                <img class="content4_gallerytable_image" src="image/gallery/slika7.jpg">
-              </td>
-              <td class="content4_gallerytable_tr_td">
-                <img class="content4_gallerytable_image" src="image/gallery/slika8.jpg">
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- Site 5 -->
-        <div class="content5">
           <h1 class="texttest">Contact</h1>
         </div>
       </div>
@@ -98,11 +72,9 @@
       <!-- Sidebar items box -->
       <nav class="sidebarItems">
         <!-- Sidebar items -->
-        <p class="sidebarItem" onclick="showPage(this, 1)">Home</p>
-        <p class="sidebarItem" onclick="showPage(this, 2)">About</p>
-        <p class="sidebarItem" onclick="showPage(this, 3)">Portfolio</p>
-        <p class="sidebarItem" onclick="showPage(this, 4)">Gallery</p>
-        <p class="sidebarItem" onclick="showPage(this, 5)">Contact</p>
+        <p class="sidebarItem" onclick="showPage(this, 1)">Photography</p>
+        <p class="sidebarItem" onclick="showPage(this, 2)">Videography</p>
+        <p class="sidebarItem" onclick="showPage(this, 3)">Contact</p>
       </nav>
       <!-- SideBar BookMark -->
       <div class="sidebarBookMark" onclick="toggleSidebarMenu()">
@@ -117,5 +89,7 @@
       <img class="logo" src="image/fblogo.png" onclick="openSite('https://www.facebook.com/Clarityst-111557937087687/')">
       <img class="logo" src="image/gmaillogo.png" onclick="openSite('mailto:jan.teleban00@gmail.com')">
     </div>
+    <!-- This script needs to be linked at the end -->
+    <script src="script/slideshowScript.js" charset="utf-8"></script>
   </body>
 </html>
