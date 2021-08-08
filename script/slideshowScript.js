@@ -1,8 +1,6 @@
-var slideIndex = [1];
+var slideIndex = [1, 1, 1, 1, 1];
 /* Class the members of each slideshow group with different CSS classes */
-var slideId = ["mySlides1"]
-showSlides(1, 0);
-//showSlides(1, 1);
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -22,3 +20,10 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";
 }
+
+// Initialize when site is opened
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);

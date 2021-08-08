@@ -1,5 +1,5 @@
 var toTabletValue = 850;
-var toPhoneValue = 500;
+var toPhoneValue = 600;
 //Toggle sidebar
 function toggleSidebarMenu(){
   var element = document.getElementsByClassName("sidebar")[0];
@@ -59,14 +59,21 @@ function showPage(element, index){
     var element = document.getElementsByClassName("sidebar")[0];
     element.style.right = "-300px";
   }
+  //Scroll to top
+  window.scroll(0, 0);
 }
 //Opens new site
 function openSite(url){
   window.location.href = url;
+}
+//Enlarges the image
+function enlarge(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "flex";
 }
 
 //For css to look more compact and nice... this function makes landing page visible
 setTimeout(function () {
   var ele = document.getElementsByClassName("content1")[0];
   ele.style.display = "block";
-}, 100);
+}, 300);
