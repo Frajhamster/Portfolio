@@ -179,6 +179,10 @@ header{
   font-family: HalloSans;
   font-size: 35px;
 }
+.content4_phone_number{
+  pointer-events: none;
+  text-decoration: none;
+}
 
 /* Slideshow */
 .slideshow-container{
@@ -411,6 +415,13 @@ header{
   .content3_line3{
     display: block;
   }
+  .content4_text1{
+    font-size: 20px;
+  }
+  .content4_phone_number{
+    pointer-events: auto;
+    text-decoration: underline;
+  }
 
   /* Slideshow */
   .slideshow-container{
@@ -431,6 +442,9 @@ header{
   }
   .sidebarAnimatedBorder{
     display: none;
+  }
+  .sidebarSocialMedia{
+    display: flex;
   }
 
   /* Social Media */
